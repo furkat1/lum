@@ -1,0 +1,12 @@
+.max_width_container {
+  max-width: 1536px;
+  margin: 0 auto;
+  flex: 1;
+  width: 100%;
+}
+
+@media (max-width: 1536px) {
+  .max_width_container {
+    max-width: 1144px;
+  }
+}

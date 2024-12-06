@@ -1,0 +1,71 @@
+{
+  "name": "next-gen-customer-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "husky",
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --fix",
+    "submodules:update": "git submodule update --init --recursive",
+    "submodules:update:remote": "git submodule update --remote"
+  },
+  "lint-staged": {
+    "*.ts?(x)": "eslint --fix",
+    "*.js": "eslint --fix",
+    "*.mjs": "eslint --fix"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.7",
+    "@mui/material": "^6.1.4",
+    "@mui/material-nextjs": "^6.1.4",
+    "axios": "^1.7.7",
+    "date-fns": "^4.1.0",
+    "lodash": "^4.17.21",
+    "next": "15.0.2",
+    "next-intl": "^3.24.0",
+    "qs": "^6.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-slick": "^0.30.2",
+    "server-only": "^0.0.1",
+    "slick-carousel": "^1.8.1",
+    "swr": "^2.2.5"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.1",
+    "@eslint/js": "^9.13.0",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^20",
+    "@types/qs": "^6.9.17",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "eslint": "^9.13.0",
+    "eslint-config-next": "15.0.2",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-refresh": "^0.4.13",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5",
+    "typescript-eslint": "^8.11.0"
+  },
+  "resolutions": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+  }
+}

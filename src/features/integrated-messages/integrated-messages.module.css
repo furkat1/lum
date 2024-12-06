@@ -1,0 +1,67 @@
+.container {
+  /* should be the same as in IntegratedMessagesConfig */
+  --carousel-height: 156px;
+  --carousel-item-width: 336px;
+  --carousel-gap: 19px;
+
+  display: flex;
+  height: var( --carousel-height);
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  margin-left: auto;
+  width: calc((var(--carousel-item-width) * 3 + var(--carousel-gap) * 2));
+  height: var(--carousel-height);
+  border-radius: 16px;
+  position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 1536px) {
+  .carousel {
+    width: calc((var(--carousel-item-width) * 2 + var(--carousel-gap)));
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width: var(--carousel-item-width);
+  }
+}
+
+.carousel_inner {
+  height: var(--carousel-height);
+  position: relative;
+  width: fit-content;
+}
+
+.message {
+  min-width: var(--carousel-item-width);
+  &:not(:last-child) {
+    margin-right: var(--carousel-gap);
+  }
+}
+
+.navigation {
+  position: absolute;
+  bottom: -42px;
+  width: 100%;
+}
+
+.navigation_point {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin: auto 6px;
+}
+
+.navigation-button {
+  width: 18px;
+  height: 18px;
+}

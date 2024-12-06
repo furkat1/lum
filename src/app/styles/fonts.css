@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansBold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansBoldItalic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansMediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansRegularItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ABCArizona";
+  src:
+    local("ABCArizona"),
+    url("/public/fonts/ABCArizona-SansLightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}

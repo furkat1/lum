@@ -1,0 +1,118 @@
+{
+  "Greeting": {
+    "hello": "Hello"
+  },
+  "AuthLayout": {
+    "title": "Welcome to the Lumenis App",
+    "subtitle": "available exclusively to our US customers"
+  },
+  "NeedHelp": {
+    "title": " Need help?",
+    "subtitle": "We are here to support you!"
+  },
+  "SignIn": {
+    "title": "Log in",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me on this device",
+    "errors": {
+      "not-matched": {
+        "first-line": "Details don’t match",
+        "second-line": "We couldn’t match the email to the password. Please check you’re entering the correct email and try again."
+      }
+    }
+  },
+  "SignUp": {
+    "title": "Sign up",
+    "email": "Email",
+    "errors": {
+      "not-recognized": "We do not recognize this email address, please try again.",
+      "locked": {
+        "first-line": "We do not recognize this email address.",
+        "second-line": "If you would like to use this email address to get access to the Lumenis App,",
+        "third-line": "Please contact us."
+      },
+      "registered": "You are already signed up, please enter password and log in."
+    }
+  },
+  "RefSn": {
+    "text": "Please enter your device’s serial number (SN), as printed on the device label",
+    "back-link": "Back to log in",
+    "continue": "Continue",
+    "input-label": "SN",
+    "helper-text": "For example: SN000174",
+    "helper-text-error": "Please check your SN",
+    "errors": {
+      "not-recognized": "Please try again or contact us at: ",
+      "locked": {
+        "first-line": "We do not recognize the SN you entered.",
+        "second-line": "Please contact us at "
+      }
+    }
+  },
+  "Store": {
+    "tabs": {
+      "products": "All products",
+      "recently-purchased": "Recently purchased",
+      "orders": "Order history"
+    },
+    "no-products": "No products available for purchase for this system."
+  },
+  "NavLinks": {
+    "account": "Account",
+    "links": {
+      "FEED": "Feed",
+      "STORE": "Store",
+      "TREASURE_TROVE": "Treasure trove",
+      "ANALYTICS": "Analytics",
+      "SUPPORT": "Support"
+    }
+  },
+  "Orders": {
+    "date": "Date",
+    "total": "Total",
+    "redeemed": "Redeemed",
+    "states": {
+      "Cart": "Cart",
+      "Placed": "Placed",
+      "InProgress": "In Progress",
+      "PartiallyApproved": "Partially Approved",
+      "Approved": "Approved",
+      "PrepedToShip": "Prep to ship",
+      "PartiallyShipped": "Partially Shipped",
+      "Shipped": "Shipped",
+      "PartiallyDelivered": "Partially Delivered",
+      "Delivered": "Delivered",
+      "Failed": "Failed"
+    }
+  },
+  "Clinics": {
+    "hero": "Business dashboard chain overview",
+    "tabs": {
+      "main": "Main",
+      "clinics": "Clinics",
+      "reports": "Reports",
+      "resources": "Resources",
+      "support": "Support"
+    }
+  },
+  "Cart": {
+    "SubscriptionModal": {
+      "yearProgram": "12 Month auto-ship program",
+      "benefits": {
+        "saveTime": "Saves you the time, trouble and worry of keeping up on stock!",
+        "discountedPrice": "Entitles you to a DISCOUNTED price on bulk orders!",
+        "freeShipping": "Grants you FREE ground shipping with this coupon code: save12"
+      },
+      "autoShipmentInfo": "Auto-shipments are sent out once a month. Additional ",
+      "conditions": "conditions",
+      "apply": " apply",
+      "noThanks": "No, thanks",
+      "confirmAutoshipment": "Confirm Autoshipment"
+    },
+    "CartFooter": {
+      "cartTotal": "Cart total:",
+      "next": "Next"
+    }
+  }
+}
