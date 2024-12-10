@@ -95,6 +95,8 @@ export type SessionData = Pick<
   | "userProfession"
   | "userPositionInClinic"
   | "userYearStartedAesthetics"
+  | "userFirstName"
+  | "userLastName"
 >;
 
 export type RegistrationResponse = {

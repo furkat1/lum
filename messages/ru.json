@@ -114,5 +114,11 @@
       "cartTotal": "Итого в корзине:",
       "next": "Далее"
     }
+  },
+  "Profile": {
+    "delete": "Delete",
+    "reset": "Reset",
+    "myProfile": "Мой профиль",
+    "details": "Детали"
   }
 }

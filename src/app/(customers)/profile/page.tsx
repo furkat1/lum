@@ -5,9 +5,7 @@ import { getSession } from '@/lib/auth';
 export default async function Profile() {
   const session = await getSession();
   return (
-      <MaxWidthContainer
-        sx={{ width: "100%"}}
-      >
+      <MaxWidthContainer>
         <ProfileForm session={session}/>
       </MaxWidthContainer>
   );

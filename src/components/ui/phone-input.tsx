@@ -5,7 +5,7 @@ import {
   MenuItem,
   TextField,
   Typography,
-  Select
+  Select, styled, SelectProps
 } from '@mui/material';
 import React from 'react';
 import {
@@ -48,11 +48,8 @@ export const PhoneInput: React.FC<MUIPhoneProps> = ({
       inputRef={inputRef}
       InputProps={{
         startAdornment: (
-          <InputAdornment
-            position="start"
-            style={{ marginRight: '2px', marginLeft: '-8px' }}
-          >
-            <Select
+          <StyledInputAdornment position="start">
+            <StyledSelect
               MenuProps={{
                 style: {
                   top: '10px',
@@ -62,49 +59,13 @@ export const PhoneInput: React.FC<MUIPhoneProps> = ({
                   vertical: 'top',
                   horizontal: 'left',
                 },
-              }
-            }
-              sx={{
-                width: '68px',
-                background: 'none',
-                '&:hover': {
-                  background: 'none',
-                },
-                fieldset: {
-                  display: 'none',
-                },
-                '&.Mui-focused:has(div[aria-expanded="false"])': {
-                  fieldset: {
-                    display: 'block',
-                  },
-                },
-                '.MuiSelect-select': {
-                  padding: '8px',
-                  paddingRight: '24px !important',
-                },
-                '& .MuiList-root': {
-                  overflow: 'hidden'
-                },
-                svg: {
-                  right: 0,
-                },
               }}
               value={country.iso2}
               onChange={(e) => setCountry(e.target.value as CountryIso2)}
               renderValue={(value) => (
                 <FlagImage iso2={value} style={{ display: 'flex' }} />
               )}
-              IconComponent={() => (
-                <KeyboardArrowDownRounded
-                  id="select-arrow-down"
-                  sx={{
-                    position: "absolute",
-                    top: "calc(50% - .5em)",
-                    pointerEvents: "none",
-                    right: 7,
-                  }}
-                />
-              )}
+              IconComponent={StyledKeyboardArrowDownRounded}
             >
               {defaultCountries.map((c) => {
                 const country = parseCountry(c);
@@ -119,11 +80,52 @@ export const PhoneInput: React.FC<MUIPhoneProps> = ({
                   </MenuItem>
                 );
               })}
-            </Select>
-          </InputAdornment>
+            </StyledSelect>
+          </StyledInputAdornment>
         ),
       }}
       {...restProps}
     />
   );
 };
+
+
+const StyledInputAdornment = styled(InputAdornment)({
+  marginRight: '2px',
+  marginLeft: '-8px',
+});
+
+const StyledSelect = styled((props: SelectProps<CountryIso2>) => (
+  <Select {...props} />
+))(({ theme }) => ({
+  width: '68px',
+  background: 'none',
+  '&:hover': {
+    background: 'none',
+  },
+  fieldset: {
+    display: 'none',
+  },
+  '&.Mui-focused:has(div[aria-expanded="false"])': {
+    fieldset: {
+      display: 'block',
+    },
+  },
+  '.MuiSelect-select': {
+    padding: '8px',
+    paddingRight: '24px !important',
+  },
+  '& .MuiList-root': {
+    overflow: 'hidden',
+  },
+  svg: {
+    right: 0,
+  },
+}));
+
+const StyledKeyboardArrowDownRounded = styled(KeyboardArrowDownRounded)({
+  position: 'absolute',
+  top: 'calc(50% - .5em)',
+  pointerEvents: 'none',
+  right: 7,
+});

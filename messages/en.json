@@ -114,5 +114,11 @@
       "cartTotal": "Cart total:",
       "next": "Next"
     }
+  },
+  "Profile": {
+    "delete": "Delete",
+    "update": "Update",
+    "myProfile": "My profile",
+    "details": "Details"
   }
 }
