@@ -14,4 +14,9 @@ export const accessTokenToSession = (accessTokenResponse: AccessTokenResponse): 
   permissions: accessTokenResponse.permissions,
   pleaseChangePassword: accessTokenResponse.pleaseChangePassword,
   allowedMachineTypes: accessTokenResponse.allowedMachineTypes,
+  userProfession: accessTokenResponse.userProfession,
+  userPositionInClinic: accessTokenResponse.userPositionInClinic,
+  userYearStartedAesthetics: accessTokenResponse.userYearStartedAesthetics,
+  userFirstName: accessTokenResponse.userFirstName,
+  userLastName: accessTokenResponse.userLastName,
 });
