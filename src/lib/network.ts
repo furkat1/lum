@@ -82,5 +82,10 @@ export const put = async <T>(
     body: JSON.stringify(body),
   });
 
-  return response.json();
+  console.log(response);
+  const isNotEmptyResponse = await response.clone().text();
+  if (isNotEmptyResponse) {
+    return response.json();
+  }
+  return {} as T;
 };

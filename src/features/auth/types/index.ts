@@ -92,6 +92,9 @@ export type SessionData = Pick<
   | "permissions"
   | "pleaseChangePassword"
   | "allowedMachineTypes"
+  | "userProfession"
+  | "userPositionInClinic"
+  | "userYearStartedAesthetics"
 >;
 
 export type RegistrationResponse = {
